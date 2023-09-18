@@ -1,34 +1,41 @@
 # CreditCard-Fraud-Classifier
-Fraud detection system that uses Decision Tree classifiers to identify potentially fraudulent transactions. 
 
-This system utilizes various data preprocessing techniques, such as handling imbalanced classes, and evaluates the model's performance using metrics like precision, recall, and F1-score. Additionally, experimented with threshold tuning to try and improve the model's ability to correctly classify instances of fraud. Will utulize logistic regression,then random forest algorithms to achieve higher predictive accuracy. Also will compare its [precision, recall, f1-score] to to the decision tree to show its improvement of each.  
-Decision Tree Classification Report:[
-              precision    recall  f1-score   support
+## Overview
+This project is a fraud detection system that uses Decision Tree classifiers to identify potentially fraudulent credit card transactions. The system employs various data preprocessing techniques, such as handling imbalanced classes, and evaluates the model's performance using metrics like precision, recall, and F1-score. Additionally, it experiments with threshold tuning to improve the model's ability to correctly classify instances of fraud. The project also utilizes Logistic Regression and Random Forest algorithms to achieve higher predictive accuracy and compares their [precision, recall, f1-score] to that of the Decision Tree to demonstrate the improvements.
 
-           0       1.00      1.00      1.00     85307
-           1       0.36      0.82      0.50       136
+## Decision Tree Classification Report
 
-    accuracy                           1.00     85443
-   macro avg       0.68      0.91      0.75     85443
-weighted avg       1.00      1.00      1.00     85443
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| Class 0 (Non-Fraud) | 1.00 | 1.00 | 1.00 | 85,307 |
+| Class 1 (Fraud) | 0.36 | 0.82 | 0.50 | 136 |
+| Accuracy | 1.00 | | | 85,443 |
+| Macro Avg | 0.68 | 0.91 | 0.75 | 85,443 |
+| Weighted Avg | 1.00 | 1.00 | 1.00 | 85,443 |
 
-
-Confusion Matrix:
+### Confusion Matrix
 [[85108   199]
  [   24   112]]
 
-Accuracy Score:
+
+### Accuracy Score
 0.9973900729141065
 
-AUC-ROC:
+### AUC-ROC
 0.9112674103014786
->1, train: 0.917, test: 0.983
->2, train: 0.919, test: 0.986
->3, train: 0.936, test: 0.962
->4, train: 0.947, test: 0.945
->5, train: 0.961, test: 0.964
->6, train: 0.974, test: 0.968
->7, train: 0.983, test: 0.986
->8, train: 0.987, test: 0.990
->9, train: 0.989, test: 0.992
-]
+
+## Threshold Tuning Results
+
+Threshold tuning results for Decison Tree:
+
+1. Train AUC-ROC: 0.917, Test AUC-ROC: 0.983
+2. Train AUC-ROC: 0.919, Test AUC-ROC: 0.986
+3. Train AUC-ROC: 0.936, Test AUC-ROC: 0.962
+4. Train AUC-ROC: 0.947, Test AUC-ROC: 0.945
+5. Train AUC-ROC: 0.961, Test AUC-ROC: 0.964
+6. Train AUC-ROC: 0.974, Test AUC-ROC: 0.968
+7. Train AUC-ROC: 0.983, Test AUC-ROC: 0.986
+8. Train AUC-ROC: 0.987, Test AUC-ROC: 0.990
+9. Train AUC-ROC: 0.989, Test AUC-ROC: 0.992
+
+
