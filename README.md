@@ -2,7 +2,7 @@
 Fraud detection system that uses Decision Tree classifiers to identify potentially fraudulent transactions. 
 
 This system utilizes various data preprocessing techniques, such as handling imbalanced classes, and evaluates the model's performance using metrics like precision, recall, and F1-score. Additionally, experimented with threshold tuning to try and improve the model's ability to correctly classify instances of fraud. Will utulize logistic regression,then random forest algorithms to achieve higher predictive accuracy. Also will compare its [precision, recall, f1-score] to to the decision tree to show its improvement of each.  
-Decision Tree Classification Report:
+Decision Tree Classification Report:[
               precision    recall  f1-score   support
 
            0       1.00      1.00      1.00     85307
@@ -31,3 +31,4 @@ AUC-ROC:
 >7, train: 0.983, test: 0.986
 >8, train: 0.987, test: 0.990
 >9, train: 0.989, test: 0.992
+]
