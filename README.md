@@ -38,4 +38,7 @@ Threshold tuning results for Decison Tree:
 8. Train AUC-ROC: 0.987, Test AUC-ROC: 0.990
 9. Train AUC-ROC: 0.989, Test AUC-ROC: 0.992
 
+![before_after_oversampling](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/30295379-c3e0-42f0-9630-789c092ba0cf)
+![decisionTree_trainTestComparison](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/b1a6af76-96c8-43f4-b487-7a8fbe413ede)
+
 
