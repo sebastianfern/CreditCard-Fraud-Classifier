@@ -4,7 +4,9 @@
 This project serves as a critical re-evaluation of the most popular Kaggle notebook for the Credit Card Fraud Dataset ([source](https://www.kaggle.com/datasets/joebeachcapital/credit-card-fraud)) focused on identifying fraudulent credit card transactions using Decision Tree classifiers. The original notebook provided valuable insights into credit card fraud detection but had room for methodological improvement. Specifically, it applied oversampling techniques before splitting the data into training and test sets, leading to potentially misleading results. To address this issue, we first split the dataset into training and test sets, and then apply oversampling techniques—specifically, SMOTE and RandomOverSampler—only to the training data, in line with best practices. Although the original author intended for the oversampling to balance the data, our findings suggest that oversampling may not be the most effective approach in this case. We substantiate this claim by evaluating the corrected model's performance using metrics such as precision, recall, F1-score, and AUC-ROC, providing a more robust and reliable assessment of its capabilities.
 
 ## Decision Tree Classification Report without resampling
- ## Initial Class distribution
+ 
+ 
+  # Initial Class distribution
 ![Initial_noResampling](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/854b1569-0bb4-468a-a3ec-ffd4a0eb5fbc)
 
 |             | Precision | Recall | F1-Score | Support |
@@ -37,11 +39,13 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 8. Train AUC-ROC: 1.000, Test AUC-ROC: 1.000
 9. Train AUC-ROC: 1.000, Test AUC-ROC: 1.000
 
- ## Train scores vs Test scores
+ # Train scores vs Test scores
 ![decisionTree_noResamplingtrainTestComparison](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/009a43e2-c512-4cd7-b506-700e2397a281)
 
 ## Decision Tree Classification Report using imbalanced-learn RandomOverSampler
-  ## Class distribution before and after resampling
+  
+  
+  # Class distribution before and after resampling
 ![before_after_oversampling](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/ec773f01-4c1e-4606-8ea2-a462a7d869c3)
 
 |             | Precision | Recall | F1-Score | Support |
@@ -74,11 +78,13 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 8. Train AUC-ROC: 0.987, Test AUC-ROC: 0.990
 9. Train AUC-ROC: 0.989, Test AUC-ROC: 0.992
 
-## Train scores vs Test scores
+# Train scores vs Test scores
 ![decisionTree_trainTestComparison](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/b1a6af76-96c8-43f4-b487-7a8fbe413ede)
 
 ## Decision Tree Classification Report using imbalanced-learn SMOTE
- ## Class distribution before and after resampling
+ 
+ 
+ # Class distribution before and after resampling
 ![before_after_oversampling](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/30295379-c3e0-42f0-9630-789c092ba0cf)
 
 |             | Precision | Recall | F1-Score | Support |
@@ -114,7 +120,7 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 ## Train scores vs Test scores
 ![decisionTree_SMOTEtrainTestComparison](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/afe8984a-696c-4543-9200-833436360852)
 
-Dataset Citation
+## Dataset Citation
 This project uses the Credit Card Fraud Dataset, which is available on OpenML. The original dataset was authored by Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson, and Gianluca Bontempi and is cited as follows:
 Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson and Gianluca Bontempi. "Calibrating Probability with Undersampling for Unbalanced Classification." In Symposium on Computational Intelligence and Data Mining (CIDM), IEEE, 2015.
 
