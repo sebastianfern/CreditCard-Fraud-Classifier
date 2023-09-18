@@ -5,8 +5,9 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 
 ## Decision Tree Classification Report without resampling
  
- 
-  ### Initial Class distribution
+
+### Initial Class distribution
+  
 ![Initial_noResampling](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/854b1569-0bb4-468a-a3ec-ffd4a0eb5fbc)
 
 |             | Precision | Recall | F1-Score | Support |
@@ -27,7 +28,7 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 ### AUC-ROC
 0.8731373933867919
 
-## Results for the First Decision Tree
+### Results for the First Decision Tree
 
 1. Train AUC-ROC: 0.999, Test AUC-ROC: 0.999
 2. Train AUC-ROC: 0.999, Test AUC-ROC: 0.999
@@ -39,13 +40,15 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 8. Train AUC-ROC: 1.000, Test AUC-ROC: 1.000
 9. Train AUC-ROC: 1.000, Test AUC-ROC: 1.000
 
- ## Train scores vs Test scores
+### Train scores vs Test scores
+ 
 ![decisionTree_noResamplingtrainTestComparison](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/009a43e2-c512-4cd7-b506-700e2397a281)
 
 ## Decision Tree Classification Report using imbalanced-learn RandomOverSampler
   
   
-  ### Class distribution before and after resampling
+### Class distribution before and after resampling
+  
 ![before_after_oversampling](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/ec773f01-4c1e-4606-8ea2-a462a7d869c3)
 
 |             | Precision | Recall | F1-Score | Support |
@@ -66,7 +69,7 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 ### AUC-ROC
 0.9112674103014786
 
-## Results for the Second Decision Tree
+### Results for the Second Decision Tree
 
 1. Train AUC-ROC: 0.917, Test AUC-ROC: 0.983
 2. Train AUC-ROC: 0.919, Test AUC-ROC: 0.986
@@ -78,13 +81,15 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 8. Train AUC-ROC: 0.987, Test AUC-ROC: 0.990
 9. Train AUC-ROC: 0.989, Test AUC-ROC: 0.992
 
-# Train scores vs Test scores
+### Train scores vs Test scores
+
 ![decisionTree_trainTestComparison](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/b1a6af76-96c8-43f4-b487-7a8fbe413ede)
 
 ## Decision Tree Classification Report using imbalanced-learn SMOTE
  
  
- ### Class distribution before and after resampling
+### Class distribution before and after resampling
+
 ![before_after_oversampling](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/30295379-c3e0-42f0-9630-789c092ba0cf)
 
 |             | Precision | Recall | F1-Score | Support |
@@ -105,7 +110,7 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 ### AUC-ROC
 0.902443829173387
 
-## Results for the Third Decision Tree
+### Results for the Third Decision Tree
 
 1. Train AUC-ROC: 0.943, Test AUC-ROC: 0.967
 2. Train AUC-ROC: 0.949, Test AUC-ROC: 0.981
@@ -117,7 +122,8 @@ This project serves as a critical re-evaluation of the most popular Kaggle noteb
 8. Train AUC-ROC: 0.987, Test AUC-ROC: 0.984
 9. Train AUC-ROC: 0.991, Test AUC-ROC: 0.991
 
-## Train scores vs Test scores
+### Train scores vs Test scores
+
 ![decisionTree_SMOTEtrainTestComparison](https://github.com/sebastianfern/CreditCard-Fraud-Classifier/assets/70400042/afe8984a-696c-4543-9200-833436360852)
 
 ## Dataset Citation
