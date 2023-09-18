@@ -1,7 +1,7 @@
 # CreditCard-Fraud-Classifier
 
 ## Overview
-This project is a fraud detection system that uses Decision Tree classifiers to identify potentially fraudulent credit card transactions. The system employs various data preprocessing techniques, such as handling imbalanced classes, and evaluates the model's performance using metrics like precision, recall, and F1-score. Additionally, it experiments with threshold tuning to improve the model's ability to correctly classify instances of fraud. The project also utilizes Logistic Regression and Random Forest algorithms to achieve higher predictive accuracy and compares their [precision, recall, f1-score] to that of the Decision Tree to demonstrate the improvements.
+This project is a fraud detection system that uses Decision Tree classifiers to identify potentially fraudulent credit card transactions. The system employs various data preprocessing techniques, such as handling imbalanced classes, and evaluates the model's performance using metrics like precision, recall, and F1-score. Additionally, it experiments with threshold tuning to improve the model's ability to correctly classify instances of fraud. The project also utilizes Logistic Regression and Random Forest algorithms to achieve higher predictive accuracy and compares their [precision, recall, f1-score, AUC-ROC] to that of the Decision Tree to demonstrate the improvements.
 
 ## Decision Tree Classification Report
 
